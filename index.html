@@ -25,6 +25,8 @@ h2.script{font-size:38px;margin-bottom:14px}
 .hero .date{letter-spacing:.3em;font-size:17px;margin-top:26px}
 .photo{margin:0 auto;width:78%;aspect-ratio:3/4;border:1px solid var(--line);background:linear-gradient(160deg,#e4e0d3,#d3d0bc);display:grid;place-items:center;color:var(--olive);position:relative}
 .photo::before{content:"";position:absolute;inset:8px;border:1px solid var(--line)}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.photo::before{z-index:1;border-color:rgba(255,255,255,.75);pointer-events:none}
 .photo span{font-size:52px}
 .photo.wide{aspect-ratio:4/3;width:100%}
 .verse{margin-top:24px;font-style:italic}
@@ -84,7 +86,7 @@ footer{padding:34px;text-align:center;font-size:16px;opacity:.8}
 </section>
 
 <section>
-  <div class="photo" role="img" aria-label="Espaço para a foto do casal"><span class="script">F &amp; M</span></div>
+  <div class="photo"><img src="https://raw.githubusercontent.com/fredericoteixeira-ship-it/casamento/main/images.png" alt="Frederico e Monise abraçados à beira de um lago nas montanhas" width="400" height="500" decoding="async"></div>
   <p class="verse small" style="max-width:320px;margin-inline:auto">“O amor é paciente, é bondoso. Tudo suporta, tudo crê, tudo espera.”<br>1 Coríntios 13</p>
 </section>
 
@@ -132,7 +134,7 @@ footer{padding:34px;text-align:center;font-size:16px;opacity:.8}
 </section>
 
 <section style="padding-top:0">
-  <div class="photo wide" role="img" aria-label="Espaço para a foto do casal"><span class="script">F &amp; M</span></div>
+  <div class="photo wide"><img src="https://raw.githubusercontent.com/fredericoteixeira-ship-it/casamento/main/images%202.png" alt="Os noivos assinando os documentos do casamento" width="678" height="452" loading="lazy" decoding="async"></div>
   <h2 class="script" style="margin-top:38px">Código de vestimenta</h2>
   <p style="font-size:22px">Elegante</p>
   <div class="suit" aria-hidden="true">
